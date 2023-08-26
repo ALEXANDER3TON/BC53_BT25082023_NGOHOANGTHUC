@@ -15,12 +15,12 @@ document.querySelector("#handle1").addEventListener("click", handleN);
 function handle2() {
   var numberX = +document.querySelector("#numberX").value;
   var numberN = +document.querySelector("#numberN").value;
-  var sum = 0;
+  var sum2 = 0;
   var pow = 1;
   for (var i = 1; i <= numberN; i++) {
     // Sum += Math.pow(numberX, i);
     pow = pow*numberX
-    sum += pow
+    sum2 += pow
   }
   document.querySelector("#result2").innerHTML = sum;
 }
