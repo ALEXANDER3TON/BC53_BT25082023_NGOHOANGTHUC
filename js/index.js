@@ -22,7 +22,7 @@ function handle2() {
     pow = pow*numberX
     sum2 += pow
   }
-  document.querySelector("#result2").innerHTML = sum;
+  document.querySelector("#result2").innerHTML = sum2;
 }
 
 document.querySelector("#handle2").onclick = handle2;
@@ -32,8 +32,8 @@ document.querySelector("#handle2").onclick = handle2;
 function handle3() {
   var numberN3 = +document.querySelector("#numberN3").value;
   var sum3 = 1;
-  for (var i = 0; i < numberN3; i++) {
-    sum3 += sum3 * i;
+  for (var i = 1; i <= numberN3; i++) {
+    sum3 *= i;
   }
   document.querySelector("#result3").innerHTML = sum3;
 
